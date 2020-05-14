@@ -647,7 +647,7 @@ input {
   height: 50px;
   padding: 10px;
 }
-button[type="submit"] {
+.submit-btn {
   width: 275px;
   height: 50px;
   text-align: center;
@@ -660,7 +660,7 @@ button[type="submit"] {
   margin: 50px auto 160px;
   transition: 0.3s;
 }
-button[type="submit"]:hover {
+.submit-btn:hover {
   transform: translateY(6px);
   background-color: #178a9c;
   box-shadow: none;
@@ -825,7 +825,7 @@ footer {
   .works-content-item {
     width: 46%;
   }
-  button[type="submit"] {
+  .submit-btn {
     margin: 50px auto 160px;
   }
 }
