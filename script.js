@@ -64,3 +64,19 @@ $(function () {
     });
   }
 });
+
+$.ajax({
+  url:
+    "https://docs.google.com/forms/u/0/d/e/1FAIpQLSev73P3CvRDSZnQOH6r8mycg6-CSb-NYufdDYHm2BVFktkwzA/formResponse",
+  data: { "entry.2005620554": name },
+  type: "POST",
+  dataType: "xml",
+  statusCode: {
+    0: function () {
+      //Success message
+    },
+    200: function () {
+      //Success Message
+    },
+  },
+});
