@@ -670,6 +670,10 @@ textarea {
   padding: 10px;
   resize: none;
 }
+#thxMessage {
+  margin: 250px auto 350px;
+  font-size: 2rem;
+}
 
 footer {
   padding: 20px 0;
