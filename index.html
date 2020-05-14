@@ -240,14 +240,27 @@
       <section>
         <div id="contact" class="section-inner">
           <h2>Contact</h2>
-          <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSev73P3CvRDSZnQOH6r8mycg6-CSb-NYufdDYHm2BVFktkwzA/formResponse"
-            method="post">
-            <input type="text" name="entry.2005620554" placeholder="お名前">
-            <input type="email" name="entry.1045781291" placeholder="メールアドレス">
-            <textarea name="entry.839337160" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
-            <button type="submit" name="submit" class="btn btn-info ">フォームを送信</button>
-          </form>
+          <div class="formWrapper">
+            <form
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSev73P3CvRDSZnQOH6r8mycg6-CSb-NYufdDYHm2BVFktkwzA/formResponse"
+              method="post" name="myForm" target="dummyIframe">
+              <input type="text" name="entry.2005620554" placeholder="お名前" required>
+              <input type="email" name="entry.1045781291" placeholder="メールアドレス" required>
+              <textarea name="entry.839337160" cols="30" rows="10" placeholder="お問い合わせ内容" required></textarea>
+              <input type="button" class="submit-btn" value="フォームを送信" onclick="submitForm()" />
+            </form>
+            <iframe name="dummyIframe" style="display:none;"></iframe>
+          </div>
+          <div id="thxMessage" style="display:none;">
+            <p>お問い合わせありがとうございました。</p>
+          </div>
+          <script>
+            function submitForm() {
+              document.myForm.submit();
+              document.getElementById('formWrapper').style.display = 'none';
+              document.getElementById('thxMessage').style.display = 'block';
+            }
+          </script>
         </div>
       </section>
     </main>
