@@ -417,6 +417,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+h3 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
 .hoby-item-box {
   flex-basis: 31%;
   position: relative;
@@ -671,8 +676,24 @@ textarea {
   resize: none;
 }
 #thxMessage {
-  margin: 250px auto 350px;
+  margin: 100px auto 250px;
   font-size: 2rem;
+}
+button.toTop a {
+  display: block;
+  width: 250px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: linear-gradient(to top, #333, #999);
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  margin: 30px auto;
+  transition: 0.3s;
+}
+button.toTop a:hover {
+  opacity: 0.8;
 }
 
 footer {
@@ -861,6 +882,9 @@ footer {
   .about-text-item {
     display: block;
   }
+  h3 {
+    font-size: 2.6rem;
+  }
   .hoby-item-box {
     flex-basis: 100%;
     margin-bottom: 20px;
@@ -872,6 +896,14 @@ footer {
   .works-content-item {
     width: 100%;
     margin: 10px 10px 25px;
+  }
+  #thxMessage {
+    margin: 140px auto 240px;
+    font-size: 1.4rem;
+  }
+  button.toTop a {
+    font-size: 1.4rem;
+    margin: 20px auto;
   }
   #page-top {
     right: 15px;
