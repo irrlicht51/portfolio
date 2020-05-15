@@ -505,7 +505,7 @@ h3 {
   color: #fff;
   text-align: center;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 }
 .hoby-item-content dt {
