@@ -588,6 +588,13 @@ h3 {
 #works {
   text-align: center;
 }
+p.text {
+  font-size: 1.4rem;
+  text-align: left;
+  max-width: 700px;
+  width: calc(700 / 768 * 100%);
+  margin: 0 auto 20px;
+}
 .works-content ul {
   display: flex;
   flex-wrap: wrap;
