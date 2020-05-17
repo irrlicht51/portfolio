@@ -593,7 +593,7 @@ p.text {
   text-align: left;
   max-width: 700px;
   width: calc(700 / 768 * 100%);
-  margin: 0 auto 20px;
+  margin: 0 auto 35px;
 }
 .works-content ul {
   display: flex;
