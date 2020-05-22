@@ -545,6 +545,9 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
+.skills-item {
+  flex-basis: 25%;
+}
 .skills-item dt {
   font-size: 2.4rem;
 }
