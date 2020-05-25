@@ -690,7 +690,7 @@ input {
   margin: 50px auto 160px;
   transition: 0.3s;
 }
-.submit-btn:hover {
+.submit-btn:active {
   transform: translateY(6px);
   background-color: #178a9c;
   box-shadow: none;
@@ -718,7 +718,7 @@ button.toTop a {
   margin: 50px auto 160px;
   transition: 0.3s;
 }
-button.toTop a:hover {
+button.toTop a:active {
   transform: translateY(6px);
   background-color: #178a9c;
   box-shadow: none;
