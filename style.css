@@ -685,7 +685,7 @@ input {
   box-shadow: 0 6px #178a9c;
   color: #fff;
   font-size: 1.8rem;
-  border-radius: 23px;
+  border-radius: 16px;
   border: none;
   margin: 50px auto 160px;
   transition: 0.3s;
@@ -705,20 +705,23 @@ textarea {
   font-size: 2rem;
 }
 button.toTop a {
-  display: block;
-  width: 250px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  background: linear-gradient(to top, #333, #999);
-  font-size: 1.8rem;
+  width: 275px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
-  border-radius: 5px;
-  margin: 30px auto;
+  background-color: #17a2b8;
+  box-shadow: 0 6px #178a9c;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 16px;
+  border: none;
+  margin: 50px auto 160px;
   transition: 0.3s;
 }
 button.toTop a:hover {
-  opacity: 0.8;
+  transform: translateY(6px);
+  background-color: #178a9c;
+  box-shadow: none;
 }
 
 footer {
