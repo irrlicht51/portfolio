@@ -718,10 +718,13 @@ button.toTop a {
   margin: 50px auto 160px;
   transition: 0.3s;
 }
-button.toTop a:active {
-  transform: translateY(6px);
-  background-color: #178a9c;
-  box-shadow: none;
+
+media screen and (min-width: 769px) {
+  button.toTop a:active {
+    transform: translateY(6px);
+    background-color: #178a9c;
+    box-shadow: none;
+  }
 }
 
 footer {
