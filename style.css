@@ -690,7 +690,7 @@ input {
   margin: 50px auto 160px;
   transition: 0.3s;
 }
-media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .submit-btn:active {
     transform: translateY(6px);
     background-color: #178a9c;
@@ -721,7 +721,7 @@ button.toTop a {
   transition: 0.3s;
 }
 
-media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   button.toTop a:active {
     transform: translateY(6px);
     background-color: #178a9c;
