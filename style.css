@@ -578,6 +578,7 @@ h3 {
   font-size: 7rem;
   display: block;
   text-align: center;
+  background: transparent url(./photoshop_icon.png) no-repeat center center/24%;
 }
 .wordpress::after {
   content: "\f19a";
