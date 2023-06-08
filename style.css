@@ -924,6 +924,9 @@ footer {
     flex-basis: 100%;
     padding: 0 4vw 30px;
   }
+  .photoshop::after {
+    background: transparent url(./photoshop_icon.png) no-repeat center center/20%;
+  }
   .works-content-item {
     width: 100%;
     margin: 10px 10px 25px;
