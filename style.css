@@ -572,12 +572,9 @@ h3 {
   text-align: center;
 }
 .photoshop::after {
-  content: "\f778";
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 900;
-  font-size: 7rem;
+  content: "";
   display: block;
-  text-align: center;
+  height: 119px;
   background: transparent url(./photoshop_icon.png) no-repeat center center/24%;
 }
 .wordpress::after {
