@@ -465,7 +465,7 @@ h3 {
   z-index: 1;
 }
 .literature {
-  background-image: url(./Beckett_02.JPG);
+  background-image: url(./images/Beckett_02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -473,7 +473,7 @@ h3 {
   height: 300px;
 }
 .music {
-  background-image: url(./turntable-_640.jpg);
+  background-image: url(./images/turntable-_640.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -481,7 +481,7 @@ h3 {
   height: 300px;
 }
 .skate {
-  background-image: url(./skateboard-640-426.jpg);
+  background-image: url(./images/skateboard-640-426.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -489,7 +489,7 @@ h3 {
   height: 300px;
 }
 .sauna {
-  background-image: url(./sauna-640.jpg);
+  background-image: url(./images/sauna-640.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -497,7 +497,7 @@ h3 {
   height: 300px;
 }
 .cafe {
-  background-image: url(./coffee-640.jpg);
+  background-image: url(./images/coffee-640.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -505,7 +505,7 @@ h3 {
   height: 300px;
 }
 .cat {
-  background-image: url(./lotti.JPG);
+  background-image: url(./images/lotti.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -546,7 +546,7 @@ h3 {
   justify-content: space-between;
 }
 .skills-item {
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 .skills-item dt {
   font-size: 2.4rem;
@@ -575,7 +575,7 @@ h3 {
   content: "";
   display: block;
   height: 119px;
-  background: transparent url(./photoshop_icon.png) no-repeat center center/24%;
+  background: transparent url(./images/photoshop_icon.png) no-repeat center center/21%;
 }
 .wordpress::after {
   content: "\f19a";
@@ -590,7 +590,7 @@ h3 {
   text-align: center;
 }
 p.text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: left;
   max-width: 700px;
   width: calc(700 / 768 * 100%);
@@ -641,7 +641,7 @@ span.works-cate {
 }
 .works-text-area {
   padding: 10px 15px 20px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
 }
@@ -649,7 +649,7 @@ span.works-cate {
   text-decoration: underline;
 }
 .works-text-area .notes {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #666;
   font-weight: 400;
   margin-top: 15px;
@@ -923,9 +923,6 @@ footer {
   .skills-item {
     flex-basis: 100%;
     padding: 0 4vw 30px;
-  }
-  .photoshop::after {
-    background: transparent url(./photoshop_icon.png) no-repeat center center/20%;
   }
   .works-content-item {
     width: 100%;
