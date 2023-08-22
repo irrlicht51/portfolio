@@ -62,22 +62,22 @@ $(function () {
       $("body").removeClass("noscroll");
     });
   }
-});
 
-//同じ日付で2回目以降ならローディング画面非表示の設定
-
-var splash_text = $.cookie('accessdate'); //キーが入っていれば年月日を取得
-var myD = new Date();//日付データを取得
-var myYear = String(myD.getFullYear());//年
-var myMonth = String(myD.getMonth() + 1);//月
-var myDate = String(myD.getDate());//日
-    
-if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセスした日付を比較↓
-        $(".loading-bg").css("display", "block");//１回目はローディングを表示
+  var webStorage = function () {
+    if (sessionStorage.getItem('access')) {
+      /*
+        2回目以降アクセス時の処理
+      */
+        $(".loading-bg").css("display", "none");
+    } else {
+      /*
+        初回アクセス時の処理
+      */
         $(".loading-bg").delay(4000).fadeOut(4000);
-}else {
-    $(".loading-bg").css("display", "none");//同日2回目のアクセスでローディング画面非表示
-}  
+    }
+  }
+  webStorage();
+}); 
 
 $.ajax({
   url:
