@@ -62,21 +62,6 @@ $(function () {
       $("body").removeClass("noscroll");
     });
   }
-
-  var webStorage = function () {
-    if (sessionStorage.getItem('access')) {
-      /*
-        2回目以降アクセス時の処理
-      */
-        $(".loading-bg").css("display", "none");
-    } else {
-      /*
-        初回アクセス時の処理
-      */
-        $(".loading-bg").delay(4000).fadeOut(4000);
-    }
-  }
-  webStorage();
 }); 
 
 $.ajax({
