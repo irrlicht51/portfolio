@@ -53,19 +53,12 @@ $(function () {
     $(".header-navi").toggleClass("clicked");
     $("body").toggleClass("noscroll");
   });
-  $(".header-navi ul li a").on("click", function () {
+  $(".header-navi ul li > a").on("click", function () {
+    $(".burger-btn").removeClass("clicked");
     $(".header-navi").removeClass("clicked");
+    $("body").removeClass("noscroll");
   });
-
-  var winWidth = win.width();
-  if (winWidth <= 768) {
-    $(".header-navi ul li > a").on("click", function () {
-      $(".burger-btn").removeClass("clicked");
-      $(".header-navi").removeClass("clicked");
-      $("body").removeClass("noscroll");
-    });
-  }
-}); 
+});
 
 $.ajax({
   url:
