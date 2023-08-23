@@ -12,7 +12,7 @@ let mySwiper = new Swiper(".swiper-container", {
 });
 
 $(function () {
-
+  $(".loading-bg").delay(4000).fadeOut(4000);
   $('a[href^="#"]').on("click", function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);
