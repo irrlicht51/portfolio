@@ -367,7 +367,7 @@ main {
   text-align: center;
   opacity: 0;
   z-index: 2;
-  animation: fadeIn 1s ease-in 5s both;
+  animation: fadeIn 1s ease-in 3s both;
 }
 
 @keyframes fadeIn {
