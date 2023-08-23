@@ -71,7 +71,7 @@ const webStorage = function () {
     $(".loading-bg").css("display", "block");
     $(window).on('load',function(){
       $(".loading-bg").delay(4000).fadeOut(4000);
-      $(".container").delay(4000).fadeIn(4000);
+      $(".container").delay(2000).fadeIn(4000);
     });
   }
 }
