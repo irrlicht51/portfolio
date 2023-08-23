@@ -63,6 +63,7 @@ $(function () {
 const webStorage = function () {
   if (sessionStorage.getItem('visit')) {
     // アクセス済み
+    $(".container").fadeIn(1000);
   } else {
     // 初回アクセス
     sessionStorage.setItem('visit', 'true'); // sessionStorageにデータを保存
@@ -70,6 +71,7 @@ const webStorage = function () {
     $(".loading-bg").css("display", "block");
     $(window).on('load',function(){
       $(".loading-bg").delay(4000).fadeOut(4000);
+      $(".container").delay(4000).fadeIn(4000);
     });
   }
 }
