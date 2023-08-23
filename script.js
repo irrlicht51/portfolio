@@ -12,7 +12,7 @@ let mySwiper = new Swiper(".swiper-container", {
 });
 
 $(function () {
-  $(".loading-bg").delay(4000).fadeOut(4000);
+  
   $('a[href^="#"]').on("click", function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);
@@ -54,11 +54,26 @@ $(function () {
     $("body").toggleClass("noscroll");
   });
   $(".header-navi ul li > a").on("click", function () {
-    $(".burger-btn").removeClass("clicked");
+    // $(".burger-btn").removeClass("clicked");
     $(".header-navi").removeClass("clicked");
-    $("body").removeClass("noscroll");
+    // $("body").removeClass("noscroll");
   });
 });
+
+const webStorage = function () {
+  if (sessionStorage.getItem('visit')) {
+    // アクセス済み
+  } else {
+    // 初回アクセス
+    sessionStorage.setItem('visit', 'true'); // sessionStorageにデータを保存
+    // 任意の実行処理
+    $(".loading-bg").css("display", "block");
+    $(window).on('load',function(){
+      $(".loading-bg").delay(4000).fadeOut(4000);
+    });
+  }
+}
+webStorage();
 
 $.ajax({
   url:
