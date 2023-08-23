@@ -217,6 +217,7 @@ ul {
 }
 .container {
   overflow: hidden;
+  display: none;
 }
 
 header {
