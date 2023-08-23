@@ -54,9 +54,9 @@ $(function () {
     $("body").toggleClass("noscroll");
   });
   $(".header-navi ul li > a").on("click", function () {
-    // $(".burger-btn").removeClass("clicked");
+    $(".burger-btn").removeClass("clicked");
     $(".header-navi").removeClass("clicked");
-    // $("body").removeClass("noscroll");
+    $("body").removeClass("noscroll");
   });
 });
 
