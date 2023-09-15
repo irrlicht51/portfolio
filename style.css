@@ -355,6 +355,9 @@ main {
     transform: scale(1.15);
   }
 }
+:root {
+  --swiper-theme-color: #fff;
+}
 .fv-text-area {
   position: absolute;
   top: 50%;
