@@ -65,16 +65,11 @@ $(function () {
 
 const webStorage = function () {
   if (sessionStorage.getItem('visit')) {
-    // アクセス済み
-    $(".container").fadeIn(1000);
+    $(".loading-bg").css("display", "none");
   } else {
-    // 初回アクセス
-    sessionStorage.setItem('visit', 'true'); // sessionStorageにデータを保存
-    // 任意の実行処理
-    $(".loading-bg").css("display", "block");
+    sessionStorage.setItem('visit', 'true'); 
     $(window).on('load',function(){
       $(".loading-bg").delay(4000).fadeOut(4000);
-      $(".container").delay(4000).fadeIn(4000);
     });
   }
 }
