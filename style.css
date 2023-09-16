@@ -334,6 +334,15 @@ main {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.slide-img.fv-image-01 {
+  background-image: url(./images/fv-image-01.jpg);
+}
+.slide-img.fv-image-02 {
+  background-image: url(./images/fv-image-02.jpg);
+}
+.slide-img.fv-image-03 {
+  background-image: url(./images/fv-image-03.jpg);
+}
 @-webkit-keyframes zoomUp {
   0% {
     -webkit-transform: scale(1);
