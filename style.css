@@ -335,13 +335,13 @@ main {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .slide-img.fv-image-01 {
-  background-image: url(./images/fv-image-01.jpg);
+  background-image: url(./images/fv-image_01.jpg);
 }
 .slide-img.fv-image-02 {
-  background-image: url(./images/fv-image-02.jpg);
+  background-image: url(./images/fv-image_02.jpg);
 }
 .slide-img.fv-image-03 {
-  background-image: url(./images/fv-image-03.jpg);
+  background-image: url(./images/fv-image_03.jpg);
 }
 @-webkit-keyframes zoomUp {
   0% {
