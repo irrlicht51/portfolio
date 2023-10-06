@@ -275,7 +275,7 @@ h1 {
 }
 .burger-btn {
   display: none;
-  z-index: 3;
+  z-index: 13;
 }
 .burger-btn span {
   display: block;
@@ -829,7 +829,7 @@ footer {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.95);
-    z-index: 2;
+    z-index: 12;
     transform: translateX(100%);
     opacity: 0;
     transition: 0.3s;
