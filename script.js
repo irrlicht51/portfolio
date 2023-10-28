@@ -68,9 +68,7 @@ const webStorage = function () {
     $(".loading-bg").css("display", "none");
   } else {
     sessionStorage.setItem('visit', 'true'); 
-    $(window).on('load',function(){
-      $(".loading-bg").delay(4000).fadeOut(4000);
-    });
+    $(".loading-bg").delay(4000).fadeOut(4000);
   }
 }
 webStorage();
