@@ -15,7 +15,7 @@ let mySwiper = new Swiper(".swiper-container", {
 });
 
 $(function () {
-  
+
   $('a[href^="#"]').on("click", function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);
@@ -67,8 +67,10 @@ const webStorage = function () {
   if (sessionStorage.getItem('visit')) {
     $(".loading-bg").css("display", "none");
   } else {
-    sessionStorage.setItem('visit', 'true'); 
-    $(".loading-bg").delay(4000).fadeOut(4000);
+    sessionStorage.setItem('visit', 'true');
+    $(window).on('load', function () {
+      $(".loading-bg").delay(4000).fadeOut(4000);
+    });
   }
 }
 webStorage();
