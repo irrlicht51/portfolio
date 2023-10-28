@@ -275,7 +275,7 @@ h1 {
 }
 .burger-btn {
   display: none;
-  z-index: 13;
+  z-index: 10;
 }
 .burger-btn span {
   display: block;
@@ -900,8 +900,8 @@ footer {
 
 @media screen and (max-width: 425.9px) {
   .loading-animation-text {
-    font-size: 1.4rem;
-    transform: translate(-50%, 137%);
+    font-size: 1.6rem;
+    /* transform: translate(-50%, 137%); */
   }
   .header-inner {
     padding: 15px 10px 0;
@@ -913,7 +913,7 @@ footer {
     background-position: 44% 50%;
   }
   .fv-text-area {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .my-image img {
     width: 250px;
